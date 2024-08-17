@@ -1,4 +1,6 @@
 {
+  "homepage": "https://JunThye.github.io/financial_management",
+
   "dependencies": {
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
@@ -6,5 +8,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "scripts":{
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
+}   
 }
